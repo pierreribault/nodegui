@@ -103,6 +103,8 @@ export class LoginLayout {
 
       render(successStyle);
 
+      await this.sleep(1000);
+
       if (token?.token_type != null && token.access_token != null) {
         this.destroy();
 
@@ -112,5 +114,11 @@ export class LoginLayout {
     } catch (e) {
       render(errorStyle);
     }
+  }
+
+  sleep(ms: number) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
   }
 }

@@ -68,16 +68,19 @@ export class ProfilLayout {
     this.layout.addWidget(this.ine);
 
     const birthday = new Date(profil.birthday);
-    this.birthday.setText(`Date de naissance: ${birthday.getDate()} ${birthday.getMonth()} ${birthday.getFullYear()}`);
+    this.birthday.setText(`Date de naissance: ${birthday.getDate()}/${birthday.getMonth()}/${birthday.getFullYear()}`);
     this.layout.addWidget(this.birthday);
 
-    this.mobile.setText(`Téléphone: ${profil.mobile}`);
+    this.mobile.setText(`Téléphone: **********`);
+    //this.mobile.setText(`Téléphone: ${profil.mobile}`);
     this.layout.addWidget(this.mobile);
 
     this.email.setText(`Email: ${profil.email}`);
     this.layout.addWidget(this.email);
 
-    this.address.setText(`Adresse: ${profil.address1} ${profil.city} ${profil.zipcode} ${profil.country}`);
+
+    this.address.setText(`Téléphone: **********`);
+    //this.address.setText(`Adresse: ${profil.address1} ${profil.city} ${profil.zipcode} ${profil.country}`);
     this.layout.addWidget(this.address);
   }
 

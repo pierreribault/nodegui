@@ -21,7 +21,7 @@ win.setStyleSheet(
       height: 600px;
       width: 400px;
       align-items: 'center';
-      justify-content: 'top';
+      justify-content: 'start';
     }
     #input {
       padding: 10px;
@@ -45,7 +45,6 @@ win.setStyleSheet(
       padding: 10px;
       border: 1px solid transparent;
       border-radius: 5px;
-      cursor: pointer;
     }
   `
 );
